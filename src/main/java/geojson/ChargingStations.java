@@ -16,6 +16,7 @@ import org.wololo.geojson.GeoJSON;
 import org.wololo.geojson.GeoJSONFactory;
 import org.wololo.jts2geojson.GeoJSONReader;
 
+
 public class ChargingStations extends GeoJsonFeature {
 
 	public ChargingStations(Map<String, Object> props, Geometry geom) {
