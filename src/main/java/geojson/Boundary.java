@@ -29,12 +29,16 @@ public class Boundary extends GeoJsonFeature {
 		List<Boundary> list = new ArrayList<>();
 		STRtree tree = new STRtree();
 
+		// check if geojson has one or more features
 		if (gs instanceof Feature) {
+			// add geometry and properties to list
 			Feature feature = (Feature) gs;
 			Map<String, Object> props = feature.getProperties();
 			Geometry geom = reader.read(feature.getGeometry());
 			list.add(new Boundary(props, geom));
 		} else if (gs instanceof FeatureCollection) {
+			// loop over feature collection and add geometry and properties to list
+			// use spatial index for faster iteration
 			FeatureCollection features = (FeatureCollection) GeoJSONFactory.create(geoJSON);
 			for (Feature feature : features.getFeatures()) {
 				Integer featIdx = Integer.valueOf(list.size());
@@ -44,6 +48,7 @@ public class Boundary extends GeoJsonFeature {
 				tree.insert(geom.getEnvelopeInternal(), featIdx);
 			}
 			tree.build();
+			// in case of features have no propteries
 		} else if (gs instanceof org.wololo.geojson.Geometry) {
 			Map<String, Object> props = Collections.emptyMap();
 			Geometry geom = reader.read(gs);

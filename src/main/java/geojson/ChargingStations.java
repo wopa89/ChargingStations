@@ -16,7 +16,6 @@ import org.wololo.geojson.GeoJSON;
 import org.wololo.geojson.GeoJSONFactory;
 import org.wololo.jts2geojson.GeoJSONReader;
 
-
 public class ChargingStations extends GeoJsonFeature {
 
 	public ChargingStations(Map<String, Object> props, Geometry geom) {
@@ -30,12 +29,16 @@ public class ChargingStations extends GeoJsonFeature {
 		List<ChargingStations> list = new ArrayList<>();
 		STRtree tree = new STRtree();
 
+		// check if geojson has one or more features
 		if (gs instanceof Feature) {
+			// add geometry and properties to list
 			Feature feature = (Feature) gs;
 			Map<String, Object> props = feature.getProperties();
 			Geometry geom = reader.read(feature.getGeometry());
 			list.add(new ChargingStations(props, geom));
 		} else if (gs instanceof FeatureCollection) {
+			// loop over feature collection and add geometry and properties to list
+			// use spatial index for faster iteration
 			FeatureCollection features = (FeatureCollection) GeoJSONFactory.create(geoJSON);
 			for (Feature feature : features.getFeatures()) {
 				Integer featIdx = Integer.valueOf(list.size());
@@ -45,6 +48,7 @@ public class ChargingStations extends GeoJsonFeature {
 				tree.insert(geom.getEnvelopeInternal(), featIdx);
 			}
 			tree.build();
+			// in case of features have no propteries
 		} else if (gs instanceof org.wololo.geojson.Geometry) {
 			Map<String, Object> props = Collections.emptyMap();
 			Geometry geom = reader.read(gs);
