@@ -18,4 +18,4 @@ To run the code in class ProjectMain please make sure to add the path of the dow
   1. [statistikportal.de](http://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung)
 
 ## Result visualized as map
-(H:/Studium/MasterGeographie/03Semester/Java/Projekt/map.png)
+(https://raw.githubusercontent.com/wopa89/ChargingStations/master/data/map.png)
