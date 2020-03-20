@@ -17,5 +17,5 @@ To run the code in class ProjectMain please make sure to add the path of the dow
 3. Population
   1. [statistikportal.de](http://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung)
 
-## Result visualized as map
-(https://raw.githubusercontent.com/wopa89/ChargingStations/master/data/map.png)
+### Result visualized as map
+![Map](https://raw.githubusercontent.com/wopa89/ChargingStations/master/data/map.png "Map")
