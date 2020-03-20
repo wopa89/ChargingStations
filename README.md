@@ -1,6 +1,6 @@
 # E-mobility in Germany
-This repository offers a Java Maven Project that calculates statistical values to state the electric mobility in Germany regarding charging stations
-To run the code in class ProjectMain please make sure to add the path of the downloaded files.
+This repository offers a Java Maven Project that calculates statistical values to state the electric mobility in Germany regarding charging stations.
+!To run the code in class ProjectMain please make sure to add the path of the downloaded files.
 
 ## Classes
 - ProjectMain
@@ -18,4 +18,4 @@ To run the code in class ProjectMain please make sure to add the path of the dow
 ⋅⋅* [statistikportal.de](http://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung)
 
 ## Result visualized as map
-![alt text](https://github.com/wopa89/ChargingStations/map.pdf)
+![alt text](H:/Studium/MasterGeographie/03Semester/Java/Projekt/ChargingStations/map.pdf)
