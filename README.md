@@ -11,11 +11,11 @@ To run the code in class ProjectMain please make sure to add the path of the dow
 
 ## Source
 1. Boundaries
-  1. [opendata.argis.com](https://opendata-esri-de.opendata.arcgis.com/datasets/esri-de-content::bundesl%C3%A4ndergrenzen-2018)
+- [opendata.argis.com](https://opendata-esri-de.opendata.arcgis.com/datasets/esri-de-content::bundesl%C3%A4ndergrenzen-2018)
 2. GDP per capita
-  1. [deutschlandinzahlen.de](https://www.deutschlandinzahlen.de/no_cache/tab/bundeslaender/volkswirtschaft0/bruttoinlandsprodukt/bruttoinlandsprodukt-je-einwohner?tx_diztables_pi1%5BsortBy%5D=col_28&tx_diztables_pi1%5BsortDirection%5D=asc&tx_diztables_pi1%5Bstart%5D=0)
+- [deutschlandinzahlen.de](https://www.deutschlandinzahlen.de/no_cache/tab/bundeslaender/volkswirtschaft0/bruttoinlandsprodukt/bruttoinlandsprodukt-je-einwohner?tx_diztables_pi1%5BsortBy%5D=col_28&tx_diztables_pi1%5BsortDirection%5D=asc&tx_diztables_pi1%5Bstart%5D=0)
 3. Population
-  1. [statistikportal.de](http://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung)
+- [statistikportal.de](http://www.statistikportal.de/de/bevoelkerung/flaeche-und-bevoelkerung)
 
 ### Result visualized as map
 ![Map](https://raw.githubusercontent.com/wopa89/ChargingStations/master/data/map.png "Map")
